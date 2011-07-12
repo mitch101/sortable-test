@@ -4,7 +4,6 @@ body {
   margin-top: 10px;
 }
 ul {
-  list-style: none;
   padding: 0px;
 }
 
@@ -13,6 +12,8 @@ li {
   width: 280px; 
   margin: 10px;
   padding: 5px;
+  background-color: #faeaef;
+  list-style: none;
 }
 
 #scrapbook{
@@ -24,6 +25,9 @@ li {
   border: 1px dotted #bbb;
 }
 
+li.full{
+ width: 580px; 
+}
 
 
 

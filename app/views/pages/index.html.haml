@@ -12,15 +12,18 @@
     $("#scrapbook li").draggable({
       appendTo: "body",
       helper: "clone",
-      connectToSortable: '#page'
+      connectToSortable: '#page',
+      opacity: 0.6,
+      revert: 'invalid',
+      revertDuration: 200
     });
     
     $("#page").droppable({
       drop: function(event, ui){
+        ui.draggable.addClass("full");
         ui.draggable.appendTo($(this));
       }
     }).sortable({
-      
     });
     
   });
