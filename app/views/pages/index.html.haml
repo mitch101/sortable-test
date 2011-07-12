@@ -15,7 +15,8 @@
       connectToSortable: '#page',
       opacity: 0.6,
       revert: 'invalid',
-      revertDuration: 200
+      revertDuration: 200,
+      handle: 'img'
     });
     
     $("#page").droppable({
@@ -24,6 +25,12 @@
         ui.draggable.appendTo($(this));
       }
     }).sortable({
+      axis: 'y',
+      containment: "#page",
+      tolerance: 'pointer',
+      placeholder: 'placeholder',
+      forcePlaceholderSize: true,
+      handle: 'img'
     });
     
   });

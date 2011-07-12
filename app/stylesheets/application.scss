@@ -8,12 +8,20 @@ ul {
 }
 
 li {
-  border: 1px solid #ddd;
+  background-color: #EAF3E2;
+  border: 1px solid #D4E6C6;
   width: 280px; 
-  margin: 10px;
-  padding: 5px;
-  background-color: #faeaef;
+  margin-bottom: 10px;
+  padding: 8px;
   list-style: none;
+  h2 {
+    display: inline;
+    margin: 0;
+  }
+  img {
+    float: right;
+    cursor: move;
+  }
 }
 
 #scrapbook{
@@ -23,11 +31,16 @@ li {
 #page{
   min-height: 100px; 
   border: 1px dotted #bbb;
+  padding: 10px;
 }
 
 li.full{
- width: 580px; 
+ width: 572px; 
 }
 
-
+.placeholder{
+  border: 1px dotted #ddd;
+  background-color: #FFFBEA;
+  width: 572px;
+}
 

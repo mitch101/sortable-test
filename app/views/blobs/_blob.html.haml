@@ -1,10 +1,12 @@
 %li
-  %table
-    = blob.name
-    (
-    = link_to 'Show', blob
-    \/
-    = link_to 'Edit', edit_blob_path(blob)
-    \/
-    = link_to 'Destroy', blob, :confirm => 'Are you sure?', :method => :delete
-    )
+
+  %h2= blob.name
+  (
+  = link_to 'Show', blob
+  \/
+  = link_to 'Edit', edit_blob_path(blob)
+  \/
+  = link_to 'Destroy', blob, :confirm => 'Are you sure?', :method => :delete
+  )
+
+  %img{:src => '/images/grip.png'}
