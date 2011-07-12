@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @blob.name
+
+= link_to 'Edit', edit_blob_path(@blob)
+\|
+= link_to 'Back', blobs_path

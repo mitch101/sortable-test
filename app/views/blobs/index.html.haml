@@ -1,0 +1,19 @@
+%h1 Listing blobs
+
+%table
+  %tr
+    %th Name
+    %th
+    %th
+    %th
+
+  - @blobs.each do |blob|
+    %tr
+      %td= blob.name
+      %td= link_to 'Show', blob
+      %td= link_to 'Edit', edit_blob_path(blob)
+      %td= link_to 'Destroy', blob, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Blob', new_blob_path

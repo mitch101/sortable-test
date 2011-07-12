@@ -1,0 +1,26 @@
+.span-16
+  %h1 Page
+  %ul#page
+  
+.span-8.last
+  %h1 Scrapbook
+  %ul#scrapbook
+    = render @blobs
+
+:javascript
+  $(function() {
+    $("#scrapbook li").draggable({
+      appendTo: "body",
+      helper: "clone",
+      connectToSortable: '#page'
+    });
+    
+    $("#page").droppable({
+      drop: function(event, ui){
+        ui.draggable.appendTo($(this));
+      }
+    }).sortable({
+      
+    });
+    
+  });

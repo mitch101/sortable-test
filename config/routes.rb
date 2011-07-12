@@ -1,4 +1,8 @@
 SortableTest::Application.routes.draw do
+  resources :blobs
+
+  root :to => "pages#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

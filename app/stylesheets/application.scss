@@ -1,1 +1,29 @@
 @import "partials/base";
+
+body {
+  margin-top: 10px;
+}
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+li {
+  border: 1px solid #ddd;
+  width: 280px; 
+  margin: 10px;
+  padding: 5px;
+}
+
+#scrapbook{
+  min-height: 100px; 
+}
+
+#page{
+  min-height: 100px; 
+  border: 1px dotted #bbb;
+}
+
+
+
+
